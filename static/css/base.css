@@ -1,0 +1,34 @@
+* {
+    background-color: cyan;
+}
+
+
+.mainTitle {
+    height:100px;
+    background-color: rebeccapurple;
+}
+
+.mainBottom {
+    height: 20%;
+    background-color: darkcyan;
+}
+
+.mainBody {
+    height: 550px;
+}
+
+.mainBodyLeft {
+    float: left;
+    width: 20%;
+    height: 550px;
+    background-color: antiquewhite;
+}
+.mainBodyLeft a {
+    /*clear-after: both;*/
+}
+.mainBodyRight {
+    float: left;
+    width: 80%;
+    background-color: cornflowerblue;
+    height: 550px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快乐的程序猿</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static  'css/base.css' %}" />
+</head>
+<body>
+    <div class="mainTitle">快乐的程序猿</div>
+    <div class="mainBody">
+        <div class="mainBodyLeft">
+            {% block menu %}
+            {% endblock %}
+        </div>
+        <div class="mainBodyRight">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="mainBottom">sss</div>
+</body>
+</html>
