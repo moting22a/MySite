@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from blog import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
+    path('', views.index),
     path("work/", views.work),
+    path("abc/", views.abc),
     path("work/pycharm/", views.workpycharm),
     path("work/django/", views.workdjango),
 ]

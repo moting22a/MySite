@@ -17,3 +17,8 @@ def workpycharm(req):
 
 def workdjango(req):
     return render(req, "work/django.html")
+
+
+def abc(req):
+    return render(req, "abc.html")
+

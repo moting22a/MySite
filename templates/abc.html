@@ -1,0 +1,38 @@
+{#{% load staticfiles %}#}
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快乐的程序猿</title>
+{#    <link rel="stylesheet" href="/../static/css/abc.css" type="text/css"/>#}
+    <link rel="stylesheet" href="{% static  '/css/abc.css' %}" />
+{#    <link rel="stylesheet" href="/static/css/abc.css" />#}
+</head>
+<body>
+    <div style="position: absolute;height: 80%;">
+    <div style="position: absolute;height: 10%;width:99%;clear: both;"></div>
+    <div style="position: absolute; width:99%;height:80%;clear: both;">
+        <div style="float: left;width: 15%;height: 100%;">
+            <ul>
+                <li>学习</li>
+                <li>生活</li>
+                <li>工作</li>
+                <li>娱乐</li>
+            </ul>
+        </div>
+        <div style="float: right;width: 83%;height: 100%;">
+            {% block tt %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+    <div style="height: 30px;margin-top:38%;text-align: center">
+       CopyRight©2018 快乐的程序猿 津ICP备18009156号
+    </div>
+
+    </div>
+</body>
+</html>

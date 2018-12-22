@@ -15,6 +15,7 @@
 
 .mainBody {
     height: 550px;
+    clear: both;
 }
 
 .mainBodyLeft {
