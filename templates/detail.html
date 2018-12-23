@@ -1,0 +1,10 @@
+{% extends "typeIndex.html" %}
+
+{% block menu %}
+    {% for cont in contents %}
+        <a href="{{ cont.create_user }}" >{{ cont.title }}</a><br>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    {{ curcont.content }}
+{% endblock %}

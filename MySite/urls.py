@@ -21,8 +21,10 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
-    path("work/", views.work),
+    # path("work/", views.work),
     path("abc/", views.abc),
-    path("work/pycharm/", views.workpycharm),
-    path("work/django/", views.workdjango),
+    # path("work/pycharm/", views.workpycharm),
+    # path("work/django/", views.workdjango),
+    path('typeIndex/<int:typeid>/', views.typeIndex),
+    path("detail/<int:contentid>/", views.detail),
 ]
